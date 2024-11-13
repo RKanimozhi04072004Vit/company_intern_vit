@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PDF Co-Viewer</title>
+  <style>
+    #viewer { width: 100%; height: 80vh; display: flex; justify-content: center; align-items: center; }
+    #controls { text-align: center; margin-top: 20px; }
+    button { margin: 5px; padding: 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">PDF Co-Viewer</h1>
+  <div id="viewer"></div>
+  <div id="controls">
+    <button id="prevPage">Previous</button>
+    <button id="nextPage">Next</button>
+    <p id="pageIndicator">Page: <span id="currentPage">1</span> / <span id="totalPages">1</span></p>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <script src="pdf.js"></script>
+</body>
+</html>
